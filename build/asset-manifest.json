@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/simplespreadsheet.github.io/static/css/main.46a6a12e.css",
+    "main.js": "/simplespreadsheet.github.io/static/js/main.c4db7c6f.js",
+    "index.html": "/simplespreadsheet.github.io/index.html",
+    "main.46a6a12e.css.map": "/simplespreadsheet.github.io/static/css/main.46a6a12e.css.map",
+    "main.c4db7c6f.js.map": "/simplespreadsheet.github.io/static/js/main.c4db7c6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46a6a12e.css",
+    "static/js/main.c4db7c6f.js"
+  ]
+}

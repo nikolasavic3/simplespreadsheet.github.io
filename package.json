@@ -27,5 +27,17 @@
     "gh-pages": "^6.1.1",
     "vite": "^5.3.4"
   },
-  "homepage": "https://nikolasavic3.github.io/simplespreadsheet.github.io/"
+  "homepage": "https://nikolasavic3.github.io/simplespreadsheet.github.io/",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .spreadsheet-container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .spreadsheet-container:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .input-container {
+    margin-bottom: 25px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #34495e;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
+    outline: none;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+    margin-top: 30px;
+  }
+  
+  th, td {
+    border: 2px solid #bdc3c7;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  th {
+    background-color: #ecf0f1;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  td:hover {
+    background-color: #e8f6fd;
+    transform: scale(1.05);
+    z-index: 1;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 1em;
+    text-align: center;
+    background: transparent;
+  }
+  
+  .formula-result {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-top: 8px;
+    font-style: italic;
+  }
+  
+  @media (max-width: 600px) {
+    .spreadsheet-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    input[type="number"], button {
+      padding: 12px;
+    }
+  
+    th, td {
+      padding: 10px;
+    }
+  }
